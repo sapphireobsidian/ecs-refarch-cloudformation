@@ -3,29 +3,35 @@ Metadata:
   'AWS::CloudFormation::Designer':
     210cc2a0-959e-4f2c-8616-4e997ac6aecd:
       size:
-        width: 1060
-        height: 440
+        width: 1160
+        height: 730
       position:
-        x: 61
-        'y': 50
-      z: 0
+        x: -240
+        'y': 240
+      z: 1
       embeds:
         - ca332e3a-939c-45f7-ab19-f6b4364573ae
         - 0eb60b14-5b6b-4e27-9b5e-c026ecdda1f2
         - 6724717e-bf09-4634-8b79-3b3c9cce820f
         - 14790739-c928-42d1-a524-491d46f302f5
         - 1db5ee4f-e8c6-4c62-aeb1-a1f778578a00
+        - 06bf7689-9d7b-46de-b985-cfbba63e650d
     1db5ee4f-e8c6-4c62-aeb1-a1f778578a00:
       size:
-        width: 350
-        height: 220
+        width: 170
+        height: 140
       position:
-        x: 114
-        'y': 97
-      z: 1
+        x: -180
+        'y': 360
+      z: 2
       parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
       embeds: []
       iscontainedinside:
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
@@ -37,15 +43,20 @@ Metadata:
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
     14790739-c928-42d1-a524-491d46f302f5:
       size:
-        width: 320
-        height: 210
+        width: 170
+        height: 150
       position:
-        x: 480
-        'y': 100
-      z: 1
+        x: -180
+        'y': 570
+      z: 2
       parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
       embeds: []
       iscontainedinside:
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
@@ -55,15 +66,20 @@ Metadata:
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
     6724717e-bf09-4634-8b79-3b3c9cce820f:
       size:
-        width: 140
-        height: 140
+        width: 150
+        height: 150
       position:
-        x: 119
-        'y': 346
-      z: 1
+        x: -190
+        'y': 780
+      z: 2
       parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
       embeds: []
       iscontainedinside:
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
@@ -72,15 +88,20 @@ Metadata:
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
     0eb60b14-5b6b-4e27-9b5e-c026ecdda1f2:
       size:
-        width: 140
-        height: 140
+        width: 150
+        height: 150
       position:
-        x: 493
-        'y': 340
-      z: 1
+        x: 0
+        'y': 780
+      z: 2
       parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
       embeds: []
       iscontainedinside:
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
@@ -89,15 +110,21 @@ Metadata:
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
     ca332e3a-939c-45f7-ab19-f6b4364573ae:
       size:
-        width: 140
-        height: 140
+        width: 130
+        height: 160
       position:
-        x: 920
-        'y': 100
-      z: 1
+        x: 150
+        'y': 460
+      z: 2
       parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
-      embeds: []
+      embeds:
+        - 1cd24078-a290-42c0-9442-cf6ec6857a90
       iscontainedinside:
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+        - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
         - 210cc2a0-959e-4f2c-8616-4e997ac6aecd
@@ -110,10 +137,42 @@ Metadata:
       z: 1
     7d90e78e-4ebe-4a2e-80c6-286860cc4d8b:
       source:
-        id: 14790739-c928-42d1-a524-491d46f302f5
-      target:
         id: ca332e3a-939c-45f7-ab19-f6b4364573ae
+      target:
+        id: 14790739-c928-42d1-a524-491d46f302f5
+      z: 1
+    06bf7689-9d7b-46de-b985-cfbba63e650d:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -150
+        'y': 260
       z: 2
+      parent: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+      embeds: []
+    832a5f00-44fa-490f-84f4-e4b6488c1853:
+      source:
+        id: 210cc2a0-959e-4f2c-8616-4e997ac6aecd
+      target:
+        id: 06bf7689-9d7b-46de-b985-cfbba63e650d
+      z: 0
+    1cd24078-a290-42c0-9442-cf6ec6857a90:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 180
+        'y': 520
+      z: 3
+      parent: ca332e3a-939c-45f7-ab19-f6b4364573ae
+      embeds: []
+      isassociatedwith:
+        - 06bf7689-9d7b-46de-b985-cfbba63e650d
+      iscontainedinside:
+        - ca332e3a-939c-45f7-ab19-f6b4364573ae
+      dependson:
+        - 832a5f00-44fa-490f-84f4-e4b6488c1853
 Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
@@ -197,6 +256,16 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: ca332e3a-939c-45f7-ab19-f6b4364573ae
+  DefaultPublicRoute:
+    Type: 'AWS::EC2::Route'
+    DependsOn: InternetGatewayAttachment
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 1cd24078-a290-42c0-9442-cf6ec6857a90
   PublicSubnet1RouteTableAssociation:
     Type: 'AWS::EC2::SubnetRouteTableAssociation'
     Properties:
@@ -213,6 +282,23 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 7d90e78e-4ebe-4a2e-80c6-286860cc4d8b
+  InternetGateway:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Ref EnvironmentName
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 06bf7689-9d7b-46de-b985-cfbba63e650d
+  InternetGatewayAttachment:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref InternetGateway
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 832a5f00-44fa-490f-84f4-e4b6488c1853
 Parameters:
   EnvironmentName:
     Description: An environment name that is prefixed to resource names
@@ -245,3 +331,31 @@ Parameters:
       second Availability Zone
     Type: String
     Default: 10.192.21.0/24
+Outputs:
+  VPC:
+    Description: A reference to the created VPC
+    Value: !Ref VPC
+  PublicSubnets:
+    Description: A list of the public subnets
+    Value: !Join 
+      - ','
+      - - !Ref PublicSubnet1
+        - !Ref PublicSubnet2
+  PrivateSubnets:
+    Description: A list of the private subnets
+    Value: !Join 
+      - ','
+      - - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+  PublicSubnet1:
+    Description: A reference to the public subnet in the 1st Availability Zone
+    Value: !Ref PublicSubnet1
+  PublicSubnet2:
+    Description: A reference to the public subnet in the 2nd Availability Zone
+    Value: !Ref PublicSubnet2
+  PrivateSubnet1:
+    Description: A reference to the private subnet in the 1st Availability Zone
+    Value: !Ref PrivateSubnet1
+  PrivateSubnet2:
+    Description: A reference to the private subnet in the 2nd Availability Zone
+    Value: !Ref PrivateSubnet2
