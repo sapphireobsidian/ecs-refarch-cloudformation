@@ -1,7 +1,7 @@
 Description: >
   This template deploys an ECS cluster to the provided VPC and subnets
   using an Auto Scaling Group
-  MyEcsDev
+  MyEcsDev /etc/ecs/ecs.config defines the cluster to connect to
 Parameters:
   EnvironmentName:
     Description: An environment name that will be prefixed to resource names
@@ -33,6 +33,11 @@ Parameters:
 Resources:
 
 
+  ECSCluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: !Ref EnvironmentName
+
 
   ECSLaunchConfiguration:
     Type: AWS::AutoScaling::LaunchConfiguration
@@ -42,7 +47,12 @@ Resources:
       SecurityGroups:
         - !Ref ContainerSecurityGroup
       IamInstanceProfile: !Ref ECSInstanceProfile
-
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          echo ECS_CLUSTER=${ECSCluster} >> /etc/ecs/ecs.config
+          yum install -y aws-cfn-bootstrap
+          /opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --resource ECSAutoScalingGroup --region ${AWS::Region}
           
   # This IAM Role is attached to all of the ECS hosts. It is based on the default role
   # published here:
@@ -110,7 +120,11 @@ Resources:
         FromPort: '8085'
         ToPort: '8085'
         CidrIp: 0.0.0.0/0
-     
+      - IpProtocol: tcp
+        FromPort: '80'
+        ToPort: '80'
+        CidrIp: 0.0.0.0/0
+        
   ECSInstanceProfile:
     Type: AWS::IAM::InstanceProfile
     Properties:
@@ -119,7 +133,11 @@ Resources:
         - !Ref ECSRole
         
 Outputs:
-
+  ClusterName:
+    Description: The name of the ECS cluster
+    Value: !Ref 'ECSCluster'
+    Export:
+      Name: !Sub ${EnvironmentName}:ClusterName
   ECSRole:
     Description: The ARN of the ECS role
     Value: !GetAtt 'ECSRole.Arn'
