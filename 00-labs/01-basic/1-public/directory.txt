@@ -1,0 +1,22 @@
+MyEcsDevStack
+https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-cluster
+
+MyEcsSvcDevStack
+https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-svc
+
+
+Cluster: MyEcsDev
+Launch instance from template
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceFromTemplate:launchTemplateId=lt-0e2da1b4fade9007c
+
+Create Auto Scaling group from Template
+https://console.aws.amazon.com/ec2autoscaling/home?region=us-east-1#/create?source=launchtemplate&launchTemplateId=lt-0e2da1b4fade9007c
+
+
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html
+
+MyEcsDevStack
+
+URL
+http://54.163.119.226/monitoring/ping

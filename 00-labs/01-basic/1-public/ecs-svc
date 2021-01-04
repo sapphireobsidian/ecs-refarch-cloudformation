@@ -1,5 +1,5 @@
 Description: >
-  This is an example of a long running ECS service that serves a blank Ver=2.
+  This is an example of a long running ECS service that serves a blank Ver=3.
 
 Parameters:
   VPC:
@@ -24,15 +24,16 @@ Resources:
       Cluster: !Ref Cluster
       DesiredCount: !Ref DesiredCount
       TaskDefinition: !Ref TaskDefinition
+      ServiceName: springboot-blank-service
 
   TaskDefinition:
     Type: AWS::ECS::TaskDefinition
     Properties:
-      Family: spring-boot-blank
+      Family: springboot-blank-task
       ContainerDefinitions:
-        - Name: spring-boot-blank-container
+        - Name: springboot-blank-container
           Essential: true
-          Image: christofersonchua/springboot-blank:build-3
+          Image: christofersonchua/springboot-blank:build-4
           Memory: 256
           PortMappings:
             - ContainerPort: 8080
