@@ -1,4 +1,4 @@
-MyEcsSecurityGroupDevStack   MyEcsSecurityGroupDev
+MyEcsSecurityGroupDevStack   MyEcsDev
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-sg
 
 MyEcsLoadBalancerDevStack  MyEcsDev
