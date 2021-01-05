@@ -1,3 +1,6 @@
+MyEcsSecurityGroupDevStack   MyEcsSecurityGroupDev
+https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-sg
+
 MyEcsDevStack
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-cluster
 
