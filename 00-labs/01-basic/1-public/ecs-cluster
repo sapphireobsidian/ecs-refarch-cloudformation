@@ -15,7 +15,7 @@ Parameters:
   ClusterSize:
     Description: How many ECS hosts do you want to initially deploy?
     Type: Number
-    Default: 1
+    Default: 0
 
   VPC:
     Description: Choose which VPC this ECS cluster should be deployed to
@@ -25,14 +25,16 @@ Parameters:
     Description: Choose which subnets this ECS cluster should be deployed to
     Type: List<AWS::EC2::Subnet::Id>
 
+  SecurityGroup:
+    Description: Select the Security Group to use for the ECS cluster hosts
+    Type: AWS::EC2::SecurityGroup::Id
+
   ECSAMI:
     Description: ECS-Optimized AMI ID
     Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
     Default: /aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id
 
 Resources:
-
-
   ECSCluster:
     Type: AWS::ECS::Cluster
     Properties:
@@ -73,7 +75,7 @@ Resources:
       ImageId: !Ref ECSAMI
       InstanceType: !Ref InstanceType
       SecurityGroups:
-        - !Ref ContainerSecurityGroup
+        - !Ref SecurityGroup
       IamInstanceProfile: !Ref ECSInstanceProfile
       UserData:
         Fn::Base64: !Sub |
@@ -130,7 +132,7 @@ Resources:
                     "Resource": "*"
                 }]
             }
-            
+  # TO DELETE          
   # A security group for the EC2 hosts that will run the containers.
   # Rules will be added depending on what ingress is created.
   ContainerSecurityGroup:

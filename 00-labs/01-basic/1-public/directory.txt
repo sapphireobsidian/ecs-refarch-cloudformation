@@ -7,7 +7,7 @@ https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-lb
 MyEcsDevStack
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-cluster
 
-MyEcsSvcDevStack
+MyEcsDevSvcStack  
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-svc
 
 
