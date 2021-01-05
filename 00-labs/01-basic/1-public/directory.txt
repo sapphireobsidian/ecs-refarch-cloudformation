@@ -9,6 +9,7 @@ https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-clu
 
 MyEcsDevSvcStack  
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-svc
+https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-svc-lb
 
 
 Cluster: MyEcsDev
@@ -26,3 +27,12 @@ MyEcsDevStack
 
 URL
 http://54.163.119.226/monitoring/ping
+
+LB URL
+MyEcsDev-1665246175.us-east-1.elb.amazonaws.com
+
+Sample URL to Container
+http://3.85.111.89:32768/blank/
+
+URL over LB
+http://myecsdev-1665246175.us-east-1.elb.amazonaws.com/blank/
