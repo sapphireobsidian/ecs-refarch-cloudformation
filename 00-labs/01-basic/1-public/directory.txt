@@ -1,3 +1,6 @@
+
+https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/vpc-public
+
 MyEcsSecurityGroupDevStack   MyEcsDev
 https://obsidian-cloudformation-templates.s3.amazonaws.com/labs-01-basic/ecs-sg
 
@@ -36,3 +39,27 @@ http://3.85.111.89:32768/blank/
 
 URL over LB
 http://myecsdev-1665246175.us-east-1.elb.amazonaws.com/blank/
+
+
+http://3.85.111.89:32768/blank/
+http://myecsdev-1665246175.us-east-1.elb.amazonaws.com/blank/
+
+
+https://aws.amazon.com/premiumsupport/knowledge-center/create-alb-auto-register/?nc1=h_ls
+Target Group:
+Important: If your service's task definition uses the awsvpc network mode (required for the AWS Fargate launch type), you must choose IP as the target type. This is because tasks that use the awsvpc network mode are associated with an elastic network interface. These tasks aren't associated with an Amazon Elastic Compute Cloud (Amazon EC2) instance.
+Task Definiton:
+Note: To use a load balancer, you must use containerPort in your task definition.
+  Service:
+    Type: AWS::ECS::Service
+    DependsOn: ListenerRule
+    Properties:
+      Cluster: !Ref Cluster
+      Role: !Ref ServiceRole
+      DesiredCount: !Ref DesiredCount
+      TaskDefinition: !Ref TaskDefinition
+      LoadBalancers:
+        - ContainerName: "springboot-blank-container"
+          ContainerPort: 8080
+          TargetGroupArn: !Ref TargetGroup
+
